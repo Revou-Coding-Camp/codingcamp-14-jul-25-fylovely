@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <!-- CSS External Link -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Content -->
+    <header>
+        <!-- Logo Icon -->
+         <div></div>
+         <nav class="navbar">
+            <img src="img/logo.png" alt="Rafika.dev Logo" class="logo-img"> 
+            <div class="hamburger" onclick="toggleMenu()">&#9776</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#message">Message Me</a></li>
+            </ul>
+         </nav>
+    </header>
+    <hr>
+    <!-- Main Content -->
+     <main>
+        <!-- Home Content -->
+         <section id="home" class="home-section">
+            <header id="userName">
+                <h1>Hi! Welcome <span id="welcome-user">[User]</span> to my personal portfolio.</h1>
+            </header>
+            <div class="home-content">
+                <p>I'm Rafika, a web developer passionate about building useful and creative web apps.</p> 
+                <a href="#profile" class="btn">Get to know more about me</a>
+                <br><br><br>
+                <a href="#message" class="btn">Let's connect!</a>
+            </div>
+         </section>
+         <hr/>
+         <!-- Our Profile Content -->
+          <section id="profile" class="profile-section">
+            <header>
+                <h2>Profile</h2>
+            </header>
+            <article>
+                 <p>Hi, I'm Rafika Yadaa, an Information Systems student with a strong passion for web 
+                development and software solutions. I enjoy building digital products that are useful, clean, and user-friendly.</p>
+                <h4>Education</h4>
+                <ul>
+                    <li>D3 in Information Management, AMIK Luwuk Banggai</li>
+                    <li>S1 in Information Systems(Ongoing), Universitas Terbuka</li>
+                </ul>
+                <h4>Skills</h4>
+                <ul>
+                    <li>Front-End: HTML, CSS, JavaScript</li>
+                    <li>Back-End: Java, PHP, Python</li>
+                    <li>Others: R, SQL, MySQL, Git</li>
+                </ul>
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Problem solver</li>
+                    <li>Team player</li>
+                    <li>Eager to learn new things</li>
+                </ul>
+            </article>
+          </section>
+          <hr/>
+          <section id="message" class="message-section">
+            <header>
+               <h2>Message Me</h2>
+            </header>
+            <p>Feel free to reach out to me for collaboration, project inquiries, or just to say hello!</p>
+            <form id="messageForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name here...">
+              </div><br><br>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Company@mail.com"></input>
+            </div><br><br>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="messageText" rows="4"></textarea>
+            </div>
+          
+              <button onclick="validateForm();" type="button">Send Message</button>
+            </form>
+            <div id="result" class="result-box"></div>
+          </section>
+     </main>
+  
+     <!-- Footer Content -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 <strong>Rafika.dev</strong>. All rights reserved.</p>
+        </div>
+    </footer>
+     <!-- Js External Link -->
+      <script src="js/script.js"></script>
+</body>
+</html>
